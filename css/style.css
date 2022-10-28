@@ -1,13 +1,28 @@
+/*globale*/
 * {
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+}
+
+/*Container vari*/
 .container{
     background-color: black;
     width: 100vw;
-    height: 80vh;
+    height: 82vh;
+    margin-top: 10vh;
 }
 
 .container-header{
@@ -18,10 +33,13 @@
 
 .container-footer{
     background-color: rgb(29, 29, 29);
-    height: 10vh;
+    height: 8vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
 }
 
+/*Row varie*/
 .row{
     width: 100%;
     display: flex;
@@ -38,12 +56,34 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
+.row-left{
+    width: 100%;
+    display: flex;
+}
+
+/*Col varie*/
 .col{
     display: flex;
 }
 
+.col-button{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin: 8px;
+}
+
+.button{
+    font-size: 25px;
+}
+
+/*Content vari*/
 .content{
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +104,7 @@
     padding-left: 2px;
 }
 
+/*Misto*/
 .cam{
     width: 12vw;
     height: 14vh;
@@ -84,4 +125,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#end{
+    background-color: rgb(78, 78, 78);
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 100%;
+}
+
+.col-button span{
+    margin-top: 5px;
 }
