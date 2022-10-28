@@ -10,9 +10,22 @@
     height: 100vh;
 }
 
+.container-header{
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+}
+
 .row{
     width: 100%;
     display: flex;
+}
+
+.row-header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2vw;
 }
 
 .col{
@@ -22,8 +35,20 @@
 .content{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 5vw;
+    justify-content: space-evenly;
+    padding: 0vh 2vw 1vh 1vw;
+}
+
+.content-header{
+    display: flex;
+    color: white;
+    padding: 5px;
+    background-color: rgba(78, 78, 78, 0.699);
+    border-radius: 5px;
+}
+
+.content-header span{
+    padding-left: 2px;
 }
 
 .cam{
